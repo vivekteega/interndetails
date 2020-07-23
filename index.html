@@ -37,18 +37,51 @@
     </script>
 
     <style>
-        .card-border{
+        .card-border {
             margin: 1rem;
             padding: 0.5rem;
             border-style: ridge;
         }
     </style>
 
+    <style>
+        .loader {
+            border: 10px solid #f3f3f3;
+            /* Light grey */
+            border-top: 10px solid #3498db;
+            /* Blue */
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 2s linear infinite;
+            margin: 1rem;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+
 
 </head>
 
 <body onload="onLoadStartUp()">
-    
+
+    <div id='logout_button'
+        style="background-color: rgb(196, 236, 255); height:1.5rem; width:3rem; padding: 0.4rem; cursor: pointer;">
+        Logout
+    </div>
+
+    <div id="loader_spinner" class="loader">
+    </div>
+
     <div id='applicantcards'>
 
     </div>
@@ -6497,7 +6530,7 @@
 
                 secret = '1' + hex2bin(
                     secret
-                    ); // append a 1 so that we can preserve the correct number of leading zeros in our secret
+                ); // append a 1 so that we can preserve the correct number of leading zeros in our secret
                 secret = split(secret, padLength);
                 var x = new Array(numShares),
                     y = new Array(numShares);
@@ -6693,7 +6726,7 @@
                         }
                         if (at === x[
                                 j
-                                ]) { // happens when computing a share that is in the list of shares used to compute it
+                            ]) { // happens when computing a share that is in the list of shares used to compute it
                             product = -
                                 1; // fix for a zero product term, after which the sum should be sum^0 = sum, not sum^1
                             break;
@@ -6705,7 +6738,7 @@
 
                     sum = product === -1 ? sum : sum ^ config.exps[
                         product
-                        ]; // though exps[-1]= undefined and undefined ^ anything = anything in chrome, this behavior may not hold everywhere, so do the check
+                    ]; // though exps[-1]= undefined and undefined ^ anything = anything in chrome, this behavior may not hold everywhere, so do the check
                 }
                 return sum;
             };
@@ -9020,7 +9053,7 @@
                                             result);
                                         resolve(
                                             "Read subAdmins from blockchain"
-                                            );
+                                        );
                                     })
                                 })
                             }).catch(error => reject(error))
@@ -9323,19 +9356,22 @@
                 alert(`Welcome FLO_ID: ${myFloID}`)
                 //App functions....
                 floCloudAPI.requestGeneralData('test4').then(cloudresponse => {
-                    createApplicantCard(floGlobals.generalData['{"application":"TEST_MODE","type":"test4"}'])
+                    createApplicantCard(floGlobals.generalData[
+                        '{"application":"TEST_MODE","type":"test4"}'])
+
+                    document.getElementById('loader_spinner').style.display = 'none'
                 })
             }).catch(error => console.error(error))
         }
     </script>
 
     <script>
-        function createApplicantCard(applicantsData){
+        function createApplicantCard(applicantsData) {
 
-            for(let i=0; i<applicantsData.length; i++){
+            for (let i = 0; i < applicantsData.length; i++) {
                 let sender = applicantsData[i].sender
                 let parsedMessage = JSON.parse(applicantsData[i].message)
-                if(parsedMessage[sender].whatsapp=='encrypted'){
+                if (parsedMessage[sender].whatsapp == 'encrypted') {
                     continue
                 }
                 let applicantCardElement = `<div class="card-border">
@@ -9371,13 +9407,19 @@
                                                     </dd>
                                                 </dl>
                                             </div>`
-                
-                document.getElementById('applicantcards').innerHTML = applicantCardElement + document.getElementById('applicantcards').innerHTML 
-             
+
+                document.getElementById('applicantcards').innerHTML = applicantCardElement + document.getElementById(
+                    'applicantcards').innerHTML
+
             }
 
-              
+
         }
+
+        document.getElementById('logout_button').addEventListener("click", function () {
+            floDapps.clearCredentials()
+            alert('Cleared Credentials! You can enter private key again')
+        });
     </script>
 </body>
 
