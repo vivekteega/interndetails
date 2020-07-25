@@ -2,336 +2,322 @@
 <html>
 
 <head>
-    <title>Marwari College Intern details</title>
+  <title>Marwari College Intern details</title>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <link href='css/bootstrap.css' rel='stylesheet' />
+  <link href='css/bootstrap.css' rel='stylesheet' />
 
-    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+  <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
 
-    <!--     <link href='css/ct-navbar.css' rel='stylesheet' /> -->
-    <link href='css/rotating-card.css' rel='stylesheet' />
+  <!--     <link href='css/ct-navbar.css' rel='stylesheet' /> -->
+  <link href='css/rotating-card.css' rel='stylesheet' />
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-    <style>
-        body {
-            margin-top: 100px;
-        }
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <style>
+    body {
+      margin-top: 100px;
+    }
 
-        .navbar-default .navbar-nav>li>a {
-            padding: 15px 15px;
-            margin: 5px 0;
-        }
+    .navbar-default .navbar-nav>li>a {
+      padding: 15px 15px;
+      margin: 5px 0;
+    }
 
-        .navbar-default {
-            padding: 10px 0;
-            background-color: rgba(255, 255, 255, 0.95);
-            border-color: transparent;
-            box-shadow: 0 0px 13px rgba(0, 0, 0, .2);
-        }
+    .navbar-default {
+      padding: 10px 0;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-color: transparent;
+      box-shadow: 0 0px 13px rgba(0, 0, 0, .2);
+    }
 
-        .btn-info,
-        .btn-info:hover,
-        .btn-info:focus {
-            color: #FFF !important;
-            background-color: #00bbff !important;
-            border-color: #00bbff !important;
-        }
+    .btn-info,
+    .btn-info:hover,
+    .btn-info:focus {
+      color: #FFF !important;
+      background-color: #00bbff !important;
+      border-color: #00bbff !important;
+    }
 
-        .btn-info {
-            opacity: .8;
-            transition: all 0.1s;
-            -webkit-transition: all 0.1s;
-        }
+    .btn-info {
+      opacity: .8;
+      transition: all 0.1s;
+      -webkit-transition: all 0.1s;
+    }
 
-        .btn-info:hover,
-        .btn-info:focus {
-            opacity: 1;
-        }
+    .btn-info:hover,
+    .btn-info:focus {
+      opacity: 1;
+    }
+  </style>
+  <style>
+    .table-header {
+      font-weight: 550;
+    }
 
-        table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  table-layout: fixed;
-}
+    .table-data {
+      padding-left: 3rem;
+    }
 
-table caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
-}
+    table {
+      border-collapse: separate;
+      border-spacing: 0 1rem;
+    }
+  </style>
 
-table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: .35em;
-}
 
-table th,
-table td {
-  padding: .625em;
-  text-align: center;
-}
-
-table th {
-  font-size: .85em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 600px) {
-  table {
-    border: 0;
-  }
-
-  table caption {
-    font-size: 1.3em;
-  }
-  
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  }
-  
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  table td:last-child {
-    border-bottom: 0;
-  }
-}
-    </style>
 </head>
 <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand navbar-brand-logo" href="https://www.creative-tim.com">
-                    <div class="logo">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png">
-                    </div>
-                    <div class="brand"> Creative Tim </div>
-              </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand navbar-brand-logo" href="https://www.creative-tim.com">
+          <div class="logo">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png">
+          </div>
+          <div class="brand"> Creative Tim </div>
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
 
-                    <li>
-                        <a class="btn btn-info" >
-                            Logout
-                        </a>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+          <li>
+            <a class="btn btn-info">
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-    <div class="row">
-        <h1 class="title">
-            This is our awesome team
-            <br>
-            <small>Present your team in an interesting way</small>
-        </h1>
-        <div class="col-sm-10 col-sm-offset-1">
-            
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container manual-flip">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="images/rotating_card_thumb.png" />
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="images/rotating_card_profile2.png" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Vivek Teega</h3>
-                                    <p class="profession">FUEqH2t6sARkPbsPgUjKC96tCWu5fHNDiY</p>
-                                    <table>
-                                        <tbody>
-                                          <tr>
-                                            <td data-label="Account">Project</td>
-                                            <td data-label="Due Date">Blockchain Content Creation on Popular Topics</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Account">WhatsApp</td>
-                                            <td data-label="Due Date">9819284302</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Account">Email</td>
-                                            <td data-label="Due Date">vivek.teega@gmail.com</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Acount">College</td>
-                                            <td data-label="Due Date">SKNSITS</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Acount">Course</td>
-                                            <td data-label="Due Date">Computer Science</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Acount">Birthdate</td>
-                                            <td data-label="Due Date">17/04/1994</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
+  <div class="row">
+    <h1 class="title">
+      This is our awesome team
+      <br>
+      <small>Present your team in an interesting way</small>
+    </h1>
+    <div class="col-sm-10 col-sm-offset-1">
 
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> 
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container manual-flip">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="images/rotating_card_thumb.png" />
+              </div>
+              <div class="user">
+                <img class="img-circle" src="images/rotating_card_profile2.png" />
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">Vivek Teega</h3>
+                  <p class="profession">FUEqH2t6sARkPbsPgUjKC96tCWu5fHNDiY</p>
+                  <table>
+                    <tbody>
+                      <tr class='table-row'>
+                        <td class='table-header'>Project</td>
+                        <td class='table-data'>Blockchain Content Creation on Popular Topics</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>WhatsApp</td>
+                        <td class='table-data'>9819284302</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Email</td>
+                        <td class='table-data'>vivek.teega@gmail.com</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>College</td>
+                        <td class='table-data'>SKNSITS</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Course</td>
+                        <td class='table-data'>Computer Science</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Birthdate</td>
+                        <td class='table-data'>17/04/1994</td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container manual-flip">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="images/rotating_card_thumb.png" />
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="images/rotating_card_profile2.png" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Vivek Teega</h3>
-                                    <p class="profession">FUEqH2t6sARkPbsPgUjKC96tCWu5fHNDiY</p>
-                                    <table>
-                                        <tbody>
-                                          <tr>
-                                            <td data-label="Account">Project</td>
-                                            <td data-label="Due Date">Blockchain Content Creation on Popular Topics</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Account">WhatsApp</td>
-                                            <td data-label="Due Date">9819284302</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Account">Email</td>
-                                            <td data-label="Due Date">vivek.teega@gmail.com</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Acount">College</td>
-                                            <td data-label="Due Date">SKNSITS</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Acount">Course</td>
-                                            <td data-label="Due Date">Computer Science</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Acount">Birthdate</td>
-                                            <td data-label="Due Date">17/04/1994</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
+                </div>
+              </div>
+            </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div> <!-- end card-container -->
+      </div>
 
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> 
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container manual-flip">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="images/rotating_card_thumb.png" />
+              </div>
+              <div class="user">
+                <img class="img-circle" src="images/rotating_card_profile2.png" />
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">Vivek Teega</h3>
+                  <p class="profession">FUEqH2t6sARkPbsPgUjKC96tCWu5fHNDiY</p>
+                  <table>
+                    <tbody>
+                      <tr class='table-row'>
+                        <td class='table-header'>Project</td>
+                        <td class='table-data'>Blockchain Content Creation on Popular Topics</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>WhatsApp</td>
+                        <td class='table-data'>9819284302</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Email</td>
+                        <td class='table-data'>vivek.teega@gmail.com</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>College</td>
+                        <td class='table-data'>SKNSITS</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Course</td>
+                        <td class='table-data'>Computer Science</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Birthdate</td>
+                        <td class='table-data'>17/04/1994</td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container manual-flip">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="images/rotating_card_thumb.png" />
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="images/rotating_card_profile2.png" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Vivek Teega</h3>
-                                    <p class="profession">FUEqH2t6sARkPbsPgUjKC96tCWu5fHNDiY</p>
-                                    <table>
-                                        <tbody>
-                                          <tr>
-                                            <td data-label="Account">Project</td>
-                                            <td data-label="Due Date">Blockchain Content Creation on Popular Topics</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Account">WhatsApp</td>
-                                            <td data-label="Due Date">9819284302</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Account">Email</td>
-                                            <td data-label="Due Date">vivek.teega@gmail.com</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Acount">College</td>
-                                            <td data-label="Due Date">SKNSITS</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Acount">Course</td>
-                                            <td data-label="Due Date">Computer Science</td>
-                                          </tr>
-                                          <tr>
-                                            <td scope="row" data-label="Acount">Birthdate</td>
-                                            <td data-label="Due Date">17/04/1994</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
+                </div>
+              </div>
+            </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div> <!-- end card-container -->
+      </div>
 
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> 
-            
-        </div> <!-- end col-sm-10 -->
-    </div> <!-- end row -->
-    <div class="space-200"></div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container manual-flip">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="images/rotating_card_thumb.png" />
+              </div>
+              <div class="user">
+                <img class="img-circle" src="images/rotating_card_profile2.png" />
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">Vivek Teega</h3>
+                  <p class="profession">FUEqH2t6sARkPbsPgUjKC96tCWu5fHNDiY</p>
+                  <table>
+                    <tbody>
+                      <tr class='table-row'>
+                        <td class='table-header'>Project</td>
+                        <td class='table-data'>Blockchain Content Creation on Popular Topics</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>WhatsApp</td>
+                        <td class='table-data'>9819284302</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Email</td>
+                        <td class='table-data'>vivek.teega@gmail.com</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>College</td>
+                        <td class='table-data'>SKNSITS</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Course</td>
+                        <td class='table-data'>Computer Science</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Birthdate</td>
+                        <td class='table-data'>17/04/1994</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div> <!-- end card-container -->
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container manual-flip">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="images/rotating_card_thumb.png" />
+              </div>
+              <div class="user">
+                <img class="img-circle" src="images/rotating_card_profile2.png" />
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">Vivek Teega</h3>
+                  <p class="profession">FUEqH2t6sARkPbsPgUjKC96tCWu5fHNDiY</p>
+                  <table>
+                    <tbody>
+                      <tr class='table-row'>
+                        <td class='table-header'>Project</td>
+                        <td class='table-data'>Blockchain Content Creation on Popular Topics</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>WhatsApp</td>
+                        <td class='table-data'>9819284302</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Email</td>
+                        <td class='table-data'>vivek.teega@gmail.com</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>College</td>
+                        <td class='table-data'>SKNSITS</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Course</td>
+                        <td class='table-data'>Computer Science</td>
+                      </tr>
+                      <tr class='table-row'>
+                        <td class='table-header'>Birthdate</td>
+                        <td class='table-data'>17/04/1994</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div> <!-- end card-container -->
+      </div>
+
+
+
+    </div> <!-- end col-sm-10 -->
+  </div> <!-- end row -->
+  <div class="space-200"></div>
 </div>
 
 
@@ -339,28 +325,28 @@ table th {
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    $().ready(function () {
-        $('[rel="tooltip"]').tooltip();
+  $().ready(function () {
+    $('[rel="tooltip"]').tooltip();
 
-        $('a.scroll-down').click(function (e) {
-            e.preventDefault();
-            scroll_target = $(this).data('href');
-            $('html, body').animate({
-                scrollTop: $(scroll_target).offset().top - 60
-            }, 1000);
-        });
-
+    $('a.scroll-down').click(function (e) {
+      e.preventDefault();
+      scroll_target = $(this).data('href');
+      $('html, body').animate({
+        scrollTop: $(scroll_target).offset().top - 60
+      }, 1000);
     });
 
-    function rotateCard(btn) {
-        var $card = $(btn).closest('.card-container');
-        console.log($card);
-        if ($card.hasClass('hover')) {
-            $card.removeClass('hover');
-        } else {
-            $card.addClass('hover');
-        }
+  });
+
+  function rotateCard(btn) {
+    var $card = $(btn).closest('.card-container');
+    console.log($card);
+    if ($card.hasClass('hover')) {
+      $card.removeClass('hover');
+    } else {
+      $card.addClass('hover');
     }
+  }
 </script>
 
 </body>
