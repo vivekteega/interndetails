@@ -128,7 +128,7 @@ body {
 .card .name {
     font-size: 22px;
     line-height: 28px;
-    margin: 10px 0 0;
+    margin: 10px 0 6px 0;
     text-align: center;
     text-transform: capitalize;
 }
@@ -202,9 +202,11 @@ body {
     text-align: center;
     font-weight: 300;
     font-size: 44px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     line-height: 90%;
+    padding: 3rem;
 }
+
 .title small{
     font-size: 17px;
     color: #999;
