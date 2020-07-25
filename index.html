@@ -9477,6 +9477,7 @@
             document.getElementById('applicantdetailsparent').style.display='initial'
 
             let tempswitch = true
+            let tempcounter = 0
 
             for (let i = 0; i < applicantsData.length; i++) {
                 let sender = applicantsData[i].sender
@@ -9495,7 +9496,7 @@
                                 </div>
                                 <div class="user usercontainerclass">
                                     <img class="img-circle" src="images/idbackground.png" />
-                                    <div class="usercentered">${i+1}</div>
+                                    <div class="usercentered">${tempcounter+1}</div>
                                 </div>
                                 <div class="content">
                                     <div class="main">
@@ -9547,6 +9548,7 @@
                 }
                 document.getElementById('applicantcards').innerHTML = applicantCardElement + document.getElementById(
                     'applicantcards').innerHTML
+                tempcounter = tempcounter + 1
 
             }
 
