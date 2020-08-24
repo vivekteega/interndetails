@@ -19,37 +19,36 @@
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script id="floGlobals">
-        /* Constants for FLO blockchain operations !!Make sure to add this at begining!! */
-        const floGlobals = {
+		/* Constants for FLO blockchain operations !!Make sure to add this at begining!! */
+		const floGlobals = {
 
-            //Required for all
-            blockchain: "FLO",
+			//Required for all
+			blockchain: "FLO",
 
-            //Required for blockchain API operators
-            apiURL: {
-                FLO: ['https://explorer.mediciland.com/', 'https://livenet.flocha.in/',
-                    'https://flosight.duckdns.org/',
-                    'http://livenet-explorer.floexperiments.com/'
-                ],
-                FLO_TEST: ['https://testnet-flosight.duckdns.org/', 'https://testnet.flocha.in/']
-            },
-            adminID: "FKAEdnPfjXLHSYwrXQu377ugN4tXU7VGdf",
-            sendAmt: 0.001,
-            fee: 0.0005,
+			//Required for blockchain API operators
+			apiURL: {
+				FLO: ['https://explorer.mediciland.com/', 'https://flosight.duckdns.org/',
+					'http://livenet-explorer.floexperiments.com/'
+				],
+				FLO_TEST: ['https://testnet-flosight.duckdns.org/', 'https://testnet.flocha.in/']
+			},
+			adminID: "F8cnZpcc3sc98DTTrPMr6ZtRon7Vk4fm1Y",
+			sendAmt: 0.001,
+			fee: 0.0005,
 
-            //Required for Supernode operations
-            SNStorageID: "FEzk75EGMPEQMrCuPosGiwuK162hcEu49E",
-            supernodes: {}, //each supnernode must be stored as floID : {uri:<uri>,pubKey:<publicKey>}
+			//Required for Supernode operations
+			SNStorageID: "FEzk75EGMPEQMrCuPosGiwuK162hcEu49E",
+			supernodes: {}, //each supnernode must be stored as floID : {uri:<uri>,pubKey:<publicKey>}
 
-            //for cloud apps
-            subAdmins: [],
-            application: "TEST_MODE",
-            vectorClock: {},
-            appObjects: {},
-            generalData: {},
-            generalVC: {}
-        }
-    </script>
+			//for cloud apps
+			subAdmins: [],
+			application: "INTERN_APPLICATIONS",
+			vectorClock: {},
+			appObjects: {},
+			generalData: {},
+			generalVC: {}
+		}
+	</script>
 
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
     <style>
@@ -9461,9 +9460,9 @@
                 document.getElementById('spinnerparent').style.display = 'initial'
                 alert(`Welcome FLO_ID: ${myFloID}`)
                 //App functions....
-                floCloudAPI.requestGeneralData('test4').then(cloudresponse => {
+                floCloudAPI.requestGeneralData('applicationbank_1').then(cloudresponse => {
                     createApplicantCard(floGlobals.generalData[
-                        '{"application":"TEST_MODE","type":"test4"}'])
+                        '{"application":"INTERN_APPLICATIONS","type":"applicationbank_1"}'])
 
                     //document.getElementById('loader_spinner').style.display = 'none'
                 })
